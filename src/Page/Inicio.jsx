@@ -2,6 +2,7 @@ import React from 'react'
 import '../Page/Inicio.css'
 import imgPubli from '../assets/img/images/backg2.jpg'
 import imgEjem from '../assets/img/images/partes-motor_1.webp'
+import Products from '../product/Products'
 
 const Inicio = () => {
   return (
@@ -26,7 +27,7 @@ const Inicio = () => {
           <iframe width="560" height="315" src="https://www.youtube.com/embed/tNaYJX9k2oo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
       </div>
-
+     
       <div className='box__container-principal'>
         <div className='box__container-card'>
           <h3>Motores</h3>
@@ -68,6 +69,7 @@ const Inicio = () => {
             </div>
           </div>
         </div>
+     
 
         <div className='box__container-card'>
           <h3>Repuestos</h3>
@@ -191,6 +193,7 @@ const Inicio = () => {
             </div>
           </div>
         </div>
+            <Products/>
       </div>
     </div>
   )
