@@ -19,7 +19,7 @@ const Inicio = () => {
               <br />lubricantes, motores y mas...
             </p>
             <div className='box__ver-Mas'>
-              <button>VER MAS</button>
+              <button><a href='#ver-mas'></a>VER MAS</button>
             </div>
           </div>
 
@@ -30,7 +30,7 @@ const Inicio = () => {
         </div>
       </div>
 
-      <div className='box__container-principal'>
+      <div className='box__container-principal' id='ver-mas'>
         <div className='box__container-card'>
           <h3>Motores</h3>
           <div className='box__section-card'>
