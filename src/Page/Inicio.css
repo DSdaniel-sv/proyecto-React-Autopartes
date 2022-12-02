@@ -36,6 +36,7 @@
     background-color: #f1eeee25;
     border: none;
     border-radius: 25px;
+    box-shadow: 0 0 5px 5px #fff;
 }
 .box__publicidad h1{
     font-size: 5rem;
@@ -63,6 +64,12 @@
     box-shadow: 0 0 5px 5px #fff;
     text-decoration: none;
     font-weight: 700;
+    text-shadow: 3px 3px 4px #fff;
+    font-size: 20px;
+}
+#ver-mas{
+    width: 200px;
+    height: 60px;
 }
 
 /* box video */

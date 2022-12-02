@@ -30,7 +30,9 @@ const Inicio = () => {
         </div>
       </div>
 
-      <div className='box__container-principal' id='ver-mas'>
+      <div id='ver-mas'>
+      </div>
+      <div className='box__container-principal'>
         <div className='box__container-card'>
           <h3>Motores</h3>
           <div className='box__section-card'>
