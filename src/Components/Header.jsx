@@ -24,6 +24,8 @@ const Header = () => {
                     <div className='box__icons-nav1'>
                         <Link className='link-ico'><i class="fa-solid fa-circle-user"></i>Sign in</Link>
                         <Link className='link-ico'><i class="fa-solid fa-right-to-bracket"></i>Log in</Link>
+                        <Link className='link-ico'><i class="fa-solid fa-cart-shopping"></i></Link>
+                        <Link className='link-ico'><i class="fa-solid fa-heart"></i></Link>
                     </div>
                 </nav>
             </div>
