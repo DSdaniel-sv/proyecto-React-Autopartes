@@ -32,28 +32,37 @@
 
 /* titulo, text y button */
 .box__publicidad{
+    padding: 20px;
+    background-color: #f1eeee25;
+    border: none;
+    border-radius: 25px;
 }
 .box__publicidad h1{
     font-size: 5rem;
     color: #f2eee9;
     font-weight: 700;
+    text-shadow: 7px 7px 7px #3b3b3b;
 }
 .box__publicidad p{
     padding-top: 2rem;
     color: #f2eee3;
     font-size: 1.5rem;
     font-weight: 600;
+    text-shadow: 10px 10px 5px #3b3b3b;
 }
 .box__ver-Mas{
     margin-top: 2rem;
     margin-bottom: 2rem;
 }
-.box__ver-Mas button{
+.box__ver-Mas a{
     padding: 15px 25px;
     border-radius: 25px;
     border: none;
     background-color: #868580;
+    color: #474E68;
     box-shadow: 0 0 5px 5px #fff;
+    text-decoration: none;
+    font-weight: 700;
 }
 
 /* box video */
@@ -113,4 +122,10 @@
 .box__card h4, .box__card p{
     color: #f2eee3;
     font-weight: 700;
+}
+
+@media(max-width: 639px){
+    .video-Y{
+        width: 40vh;
+    }
 }

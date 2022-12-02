@@ -19,7 +19,7 @@ const Inicio = () => {
               <br />lubricantes, motores y mas...
             </p>
             <div className='box__ver-Mas'>
-              <button><a href='#ver-mas'></a>VER MAS</button>
+              <a href='#ver-mas'>VER MAS</a>
             </div>
           </div>
 
