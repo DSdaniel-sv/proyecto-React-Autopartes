@@ -4,6 +4,7 @@ import Footer from '../Components/Footer'
 import Header from '../Components/Header'
 import Contacto from '../Page/Contacto'
 import Inicio from '../Page/Inicio'
+import Ofertas from '../Page/Ofertas'
 
 const Router = () => {
   return (
@@ -12,6 +13,7 @@ const Router = () => {
     <Routes>
         <Route path='/' element={<Inicio/>}/>
         <Route path='/contacto' element={<Contacto/>}/>
+        <Route path='ofertas' element={<Ofertas />} />
     </Routes>
     <Footer/>
     </BrowserRouter>

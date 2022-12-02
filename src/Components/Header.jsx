@@ -32,8 +32,8 @@ const Header = () => {
                 <nav className='nav__2'>
                     <div className={`links ${clicked ? 'active' : ''}`} id='menu-links'>
                         <li><NavLink className='nav-link link-1' to='/' activeclassname='active'><span>Inicio</span> </NavLink></li>
-                        <li><NavLink className='nav-link link-3' to='/contacto' activeclassname='active'><span>Ofertas</span></NavLink></li>
-                        <li><NavLink className='nav-link link-4' to='/ofertas' activeclassname='active'><span>Contacto</span></NavLink></li>
+                        <li><NavLink className='nav-link link-3' to='/ofertas' activeclassname='active'><span>Ofertas</span></NavLink></li>
+                        <li><NavLink className='nav-link link-4' to='/contacto' activeclassname='active'><span>Contacto</span></NavLink></li>
                     </div>
 
                     <form action="" className='frm__search2'>
