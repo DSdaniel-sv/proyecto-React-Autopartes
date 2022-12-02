@@ -1,10 +1,12 @@
 /* header */
 .header{
+    margin: auto;
     position: fixed;
     width: 100%;
     height: auto;
     top: 0;
     margin-bottom: 5rem;
+    z-index: 10;
 }
 .box__logo img{
     width: 80px;
@@ -18,7 +20,7 @@
     align-items: center;
     padding: .5rem 1rem;
     background-color: rgb(31, 29, 29);
-    z-index: 10;
+    
 }
 .box__icons-nav1{
     display: flex;
@@ -35,8 +37,11 @@
 /* navinferior nav2*/
 .nav__inferior{
 }
-.frm__search1{
-    display: none;
+.search{
+    text-align: center;
+    border-radius: 25px;
+    padding: 10px;
+    border: none;
 }
 .nav__2{
     display: flex;
@@ -112,3 +117,15 @@
     }
 }
 
+/* medidas */
+/* movile */
+@media(max-width: 380px){
+    .header{
+        width: 380px;
+    }
+}
+@media(max-width: 414px){
+    .header{
+        width: 414px;
+    }
+}

@@ -1,6 +1,6 @@
 import React from 'react'
 import '../Page/Inicio.css'
-import imgPubli from '../assets/img/images/backg2.jpg'
+import imgPubli from '../assets/img/images/backg_ini3.jpg'
 import imgEjem from '../assets/img/images/partes-motor_1.webp'
 
 const Inicio = () => {
@@ -10,20 +10,23 @@ const Inicio = () => {
         <img src={imgPubli} alt="" />
       </div>
 
-      <div className='box__message'>
-        <div className='box__publicidad'>
-          <h1>Bienvenidos</h1>
-          <p>
-            Conoce lo mejor en repuestos
-            <br />lubricantes, motores y mas...
-          </p>
-          <h3>Envios a todo el Peru</h3>
-          <div className='box__verMas'>
-            <button>VER MAS</button>
+      <div className='box__container-ini'>
+        <div className='box__message'>
+          <div className='box__publicidad'>
+            <h1>Bienvenidos</h1>
+            <p>
+              Conoce lo mejor en repuestos
+              <br />lubricantes, motores y mas...
+            </p>
+            <div className='box__ver-Mas'>
+              <button>VER MAS</button>
+            </div>
           </div>
-        </div>
-        <div className='box__video'>
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/tNaYJX9k2oo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+          <div className='box__video'>
+            <iframe className='video-Y' src="https://www.youtube.com/embed/tNaYJX9k2oo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          
         </div>
       </div>
 
