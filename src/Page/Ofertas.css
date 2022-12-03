@@ -1,6 +1,7 @@
 /* ofertas */
 .cont-ofertas{
     margin-top: 8.3rem;
+    z-index: 0;
     height: auto;
     
 }

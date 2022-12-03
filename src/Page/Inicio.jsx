@@ -2,8 +2,14 @@ import React from 'react'
 import '../Page/Inicio.css'
 import imgPubli from '../assets/img/images/backg2.jpg'
 import imgEjem from '../assets/img/images/partes-motor_1.webp'
+import list from '../data/data'
+import Card from '../Components/card'
 
-const Inicio = () => {
+const Inicio = ({handleClick}) => {
+
+
+
+
   return (
     <div className='box__inicio' id='box__ini'>
       <div className='box__img'>
@@ -25,6 +31,16 @@ const Inicio = () => {
         <div className='box__video'>
           <iframe width="560" height="315" src="https://www.youtube.com/embed/tNaYJX9k2oo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
+      </div>
+
+      <div className='content-galery'>
+        <section className='section-galery'>
+          {
+            list.map((item)=>(
+              <Card key={item.id} item={item} handleClick={handleClick}/>
+            ))
+          }
+        </section>
       </div>
 
       <div className='box__container-principal'>
