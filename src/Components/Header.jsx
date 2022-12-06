@@ -3,6 +3,8 @@ import { Link, NavLink } from 'react-router-dom'
 import '../Components/Header.css'
 import styled from 'styled-components';
 import Ham from './Ham';
+import HamI from './HamI';
+// import HamI from '../Components/HamI.css'
 import imgLogo from '../assets/img/logo/logo.png'
 
 
@@ -12,6 +14,12 @@ const Header = () => {
 
     const handleClick = () =>{
         setClicked(!clicked);
+    }
+
+    const [clickedI, setClickedI] = useState(false);
+
+    const handleClickI = () =>{
+        setClickedI(!clickedI);
     }
 
     return (
@@ -48,6 +56,17 @@ const Header = () => {
                     <div className='ham-burger'>
                         <Ham clicked={clicked} handleClick={handleClick}/>
                     </div>
+
+                    <div className={`linksI ${clickedI ? 'active' : ''}`} id='menu-linksI'>
+                        <Link className='link-ico'><i className="fa-solid fa-circle-user"></i>Sign in</Link>
+                        <Link className='link-ico'><i className="fa-solid fa-right-to-bracket"></i>Log in</Link>
+                        <Link className='link-ico'><i class="fa-solid fa-cart-shopping"></i></Link>
+                        <Link className='link-ico'><i class="fa-solid fa-heart"></i></Link>
+                    </div>
+
+                    <div className='ham-burgerI'>
+                        <HamI clickedI={clickedI} handleClickI={handleClickI}/>
+                    </div>
                 </nav>
             </div>
         </header>
@@ -55,5 +74,3 @@ const Header = () => {
 }
 
 export default Header
-
-const NavBar = styled.nav;

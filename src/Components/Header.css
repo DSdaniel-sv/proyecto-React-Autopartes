@@ -46,6 +46,15 @@
 }
 .ham-burger{
     padding-right: 25px;
+    position: absolute;
+    top: 85px;
+}
+.ham-burgerI{
+    padding-right: 25px;
+    position: absolute;
+    top: 85px;
+    right: 0;
+    margin-right: 15px;
 }
 .nav__2{
     display: flex;
@@ -124,6 +133,52 @@
     }
 }
 
+/* ham 2 */
+@media(min-width: 768px){
+    .ham-burgerI{
+        display: none;
+    }
+    #menu-linksI{
+        position: initial;
+        margin: 0;
+        display: flex;
+        font-size: 1rem;
+    }
+    #menu-linksI.active{
+        display: flex;
+        justify-content: flex-start;
+    }
+}
+
+/* ham2 */
+.linksI{
+    display: none;
+}
+#menu-linksI{
+    /* position: absolute; */
+    /* top: -700px;
+    left: -2000px; */
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+#menu-linksI.active{
+    width: 100%;
+    display: block;
+    position: relative;
+    font-size: 1.5rem;
+    /* position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    top: 30%;
+    left: 0;
+    right: 0;
+    text-align: center; */
+}
+
+/* ---------------------------------------------------------------- */
 @media(max-width: 770px){
     .search2{
         display: none;
@@ -138,8 +193,15 @@
         border-radius: 25px;
         padding: 1px 0;
         border: none;
+        margin-top: 20px;
     }
     .nav__2{
-        padding: .7rem 1rem;
+        padding: 2rem 1rem;
+    }
+    .box__icons-nav1{
+        display: none;
+    }
+    .linksI{
+        display: flex;
     }
 }
