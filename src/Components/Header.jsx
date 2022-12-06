@@ -41,7 +41,7 @@ const Header = () => {
             <div className='nav__inferior'>
                 <nav className='nav__2'>
                     <div className={`links ${clicked ? 'active' : ''}`} id='menu-links'>
-                        <li><NavLink className='nav-link link-1' to='/inicio' activeclassname='active'><span>Inicio</span> </NavLink></li>
+                        <li><NavLink className='nav-link link-1' to='/' activeclassname='active'><span>Inicio</span> </NavLink></li>
                         <li><NavLink className='nav-link link-3' to='/contacto' activeclassname='active'><span>Ofertas</span></NavLink></li>
                         <li><NavLink className='nav-link link-4' to='/ofertas' activeclassname='active'><span>Contacto</span></NavLink></li>
                         <form action="" className='frm__search1'>
