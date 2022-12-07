@@ -4,8 +4,12 @@ import '../mediaQuery/MediaQuery.css'
 import '../mediaQuery/MediaQueryM.css'
 import imgPubli from '../assets/img/images/backg_ini3.jpg'
 import imgEjem from '../assets/img/images/partes-motor_1.webp'
+import { useTranslation} from "react-i18next"
+
 
 const Inicio = () => {
+  const [t, i18n] = useTranslation("global");
+
   return (
     <div className='box__inicio' id='box__ini'>
       <div className='box__img'>
@@ -13,6 +17,9 @@ const Inicio = () => {
           <div className='box__message'>
             <div className='box__publicidad'>
               <h1>Bienvenidos</h1>
+              <h1>{t('inicio.hello-world')}</h1>
+              <button onClick={() => i18n.changeLanguage("es")}>ES</button>
+              <button onClick={() => i18n.changeLanguage("en")}>EN</button>
               <p>
                 Conoce lo mejor en repuestos
                 <br />lubricantes, motores y mas...
@@ -33,13 +40,13 @@ const Inicio = () => {
       </div>
       <div className='box__container-principal'>
         <div className='box__container-card'>
-          <h3>Motores</h3>
+          <h3>{t('inicio.motors')}</h3>
           <div className='box__section-card'>
             <div className='box__card'>
               <picture>
                 <img src={imgEjem} alt="" />
               </picture>
-              <h4>NOMBRE: </h4>
+              <h4>{t('nombre')}</h4>
               <p>PRECIO: </p>
               <button>Ver mas</button>
             </div>

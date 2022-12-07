@@ -1,0 +1,8 @@
+{
+    "inicio":{
+        "hello-world" : "Hello World",
+        "motors" : "Motors"
+
+    },
+    "nombre" : "NAME"
+}
