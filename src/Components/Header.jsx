@@ -22,6 +22,7 @@ const Header = () => {
         setClickedI(!clickedI);
     }
 
+
     return (
         <header className='header'>
             <div className='nav__superior'>
@@ -30,8 +31,7 @@ const Header = () => {
                         <Link to='/'><img src={imgLogo} alt="logo" /></Link>
                     </div>
                     <div className='box__icons-nav1'>
-                        <Link className='link-ico'><i className="fa-solid fa-circle-user"></i>Sign in</Link>
-                        <Link className='link-ico'><i className="fa-solid fa-right-to-bracket"></i>Log in</Link>
+                        <Link className='link-ico'  to='./Login/Ingreso'><i className="fa-solid fa-circle-user"></i>Sign in</Link>
                         <Link className='link-ico'><i class="fa-solid fa-cart-shopping"></i></Link>
                         <Link className='link-ico'><i class="fa-solid fa-heart"></i></Link>
                     </div>
@@ -41,7 +41,7 @@ const Header = () => {
             <div className='nav__inferior'>
                 <nav className='nav__2'>
                     <div className={`links ${clicked ? 'active' : ''}`} id='menu-links'>
-                        <li><NavLink className='nav-link link-1' to='/' activeclassname='active'><span>Inicio</span> </NavLink></li>
+                        <li><NavLink className='nav-link link-1' to='/'  activeclassname='active'><span>Inicio</span> </NavLink></li>
                         <li><NavLink className='nav-link link-3' to='/contacto' activeclassname='active'><span>Ofertas</span></NavLink></li>
                         <li><NavLink className='nav-link link-4' to='/ofertas' activeclassname='active'><span>Contacto</span></NavLink></li>
                         <form action="" className='frm__search1'>
