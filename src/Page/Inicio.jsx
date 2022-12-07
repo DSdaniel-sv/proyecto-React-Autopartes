@@ -2,14 +2,13 @@ import React from "react";
 import "../Page/Inicio.css";
 import "../mediaQuery/MediaQuery.css";
 import "../mediaQuery/MediaQueryM.css";
-import imgPubli from "../assets/img/images/backg_ini3.jpg";
-import imgEjem from "../assets/img/images/partes-motor_1.webp";
-import list from "../data/data";
-import mot from "../data/motores"
+import mot from "../data/motores";
+import repus from "../data/repuestos";
 import Card from "../Components/card";
-import Motores from "../Components/motoresCard";
+import acceso from "../data/accesorios";
+import lubri from "../data/lubricantes"
 
-const Inicio = ({ handleClick,handleClic }) => {
+const Inicio = ({ handleClick }) => {
   return (
     <div className="box__inicio" id="box__ini">
       <div className="box__img">
@@ -50,7 +49,7 @@ const Inicio = ({ handleClick,handleClic }) => {
           <h3>Motores</h3>
           <div className="box__section-card">
 
-            {list.map((item) => (
+            {mot.map((item) => (
               <Card key={item.id} item={item} handleClick={handleClick} />
             ))}
 
@@ -62,7 +61,7 @@ const Inicio = ({ handleClick,handleClic }) => {
           <div className="box__section-card">
 
 
-          {mot.map((item) => (
+          {repus.map((item) => (
               <Card key={item.id} item={item} handleClick={handleClick} />
             ))}
  
@@ -72,82 +71,36 @@ const Inicio = ({ handleClick,handleClic }) => {
         <div className="box__container-card">
           <h3>Accesorios</h3>
           <div className="box__section-card">
-            <div className="box__card">
-              <picture>
-                <img src={imgEjem} alt="" />
-              </picture>
-              <h4>NOMBRE: </h4>
-              <p>PRECIO: </p>
-              <button>Ver mas</button>
-            </div>
+          {acceso.map((item) => (
+              <Card key={item.id} item={item} handleClick={handleClick} />
+            ))}
 
-            <div className="box__card">
+            {/* <div className="box__card">
               <picture>
                 <img src={imgEjem} alt="" />
               </picture>
               <h4>NOMBRE: </h4>
               <p>PRECIO: </p>
               <button>Ver mas</button>
-            </div>
-
-            <div className="box__card">
-              <picture>
-                <img src={imgEjem} alt="" />
-              </picture>
-              <h4>NOMBRE: </h4>
-              <p>PRECIO: </p>
-              <button>Ver mas</button>
-            </div>
-
-            <div className="box__card">
-              <picture>
-                <img src={imgEjem} alt="" />
-              </picture>
-              <h4>NOMBRE: </h4>
-              <p>PRECIO: </p>
-              <button>Ver mas</button>
-            </div>
+            </div> */}
           </div>
         </div>
 
         <div className="box__container-card">
           <h3>Lubricantes</h3>
           <div className="box__section-card">
-            <div className="box__card">
-              <picture>
-                <img src={imgEjem} alt="" />
-              </picture>
-              <h4>NOMBRE: </h4>
-              <p>PRECIO: </p>
-              <button>Ver mas</button>
-            </div>
 
-            <div className="box__card">
+          {lubri.map((item) => (
+              <Card key={item.id} item={item} handleClick={handleClick} />
+            ))}
+            {/* <div className="box__card">
               <picture>
                 <img src={imgEjem} alt="" />
               </picture>
               <h4>NOMBRE: </h4>
               <p>PRECIO: </p>
               <button>Ver mas</button>
-            </div>
-
-            <div className="box__card">
-              <picture>
-                <img src={imgEjem} alt="" />
-              </picture>
-              <h4>NOMBRE: </h4>
-              <p>PRECIO: </p>
-              <button>Ver mas</button>
-            </div>
-
-            <div className="box__card">
-              <picture>
-                <img src={imgEjem} alt="" />
-              </picture>
-              <h4>NOMBRE: </h4>
-              <p>PRECIO: </p>
-              <button>Ver mas</button>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

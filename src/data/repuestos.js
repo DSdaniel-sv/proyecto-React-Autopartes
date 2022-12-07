@@ -1,4 +1,4 @@
-const products=[
+const repuestos=[
     {
       id: 1,
       name: "Autopartes",
@@ -35,7 +35,5 @@ const products=[
       image: "https://m.media-amazon.com/images/I/618oZEr-iBL.jpg",
       amount: 1,
     },
-
-
   ];
-  export default products;
+  export default repuestos;
