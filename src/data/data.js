@@ -21,7 +21,7 @@ const products=[
       id: 3,
       name: "Autopartes",
       mainCategory: "tecnology",
-      secondaryCategory: "Auto",
+      secondaryCategory: "React",
       price: 50,
       image: "https://m.media-amazon.com/images/I/71XyNb9cwWL.jpg",
       amount: 1,
@@ -30,20 +30,12 @@ const products=[
       id: 4,
       name: "Autopartes",
       mainCategory: "tecnology",
-      secondaryCategory: "Auto",
+      secondaryCategory: "React",
       price: 50,
       image: "https://m.media-amazon.com/images/I/618oZEr-iBL.jpg",
       amount: 1,
     },
-    {
-      id: 5,
-      name: "polo de react",
-      mainCategory: "tecnology",
-      secondaryCategory: "Auto",
-      price: 50,
-      image: "https://m.media-amazon.com/images/I/21fCLmBo+fL._SL500_.jpg",
-      amount: 1,
-    }
+
 
   ];
   export default products;
