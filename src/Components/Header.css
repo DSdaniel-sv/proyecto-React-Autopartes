@@ -26,6 +26,8 @@
 .box__icons-nav1{
     display: flex;
     gap: 30px;
+    justify-content: center;
+    align-items: center;
 }
 .link-ico{
     color: #fff;
@@ -34,6 +36,14 @@
     justify-content: center;
     align-items: center;
     gap: 5px;
+}
+.cart {
+    display: inline;
+    margin-top: -10px;
+}
+.cart i{
+    font-size: 20px;
+    color: #fff;
 }
 /* navinferior nav2*/
 .nav__inferior{
