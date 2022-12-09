@@ -1,6 +1,6 @@
 const lubricantes = [
     {
-      id: 1,
+      id: 5,
       name: "Autopartes",
       mainCategory: "tecnology",
       secondaryCategory: "Auto",
@@ -9,7 +9,7 @@ const lubricantes = [
       amount: 1,
     },
     {
-      id: 1,
+      id: 6,
       name: "Autopartes",
       mainCategory: "tecnology",
       secondaryCategory: "Auto",
@@ -18,7 +18,7 @@ const lubricantes = [
       amount: 1,
     },
     {
-      id: 1,
+      id: 7,
       name: "Autopartes",
       mainCategory: "tecnology",
       secondaryCategory: "Auto",
@@ -27,7 +27,7 @@ const lubricantes = [
       amount: 1,
     },
     {
-      id: 1,
+      id: 8,
       name: "Autopartes",
       mainCategory: "tecnology",
       secondaryCategory: "Auto",

@@ -1,6 +1,6 @@
 const motores = [
   {
-    id: 1,
+    id: 9,
     name: "Autopartes",
     mainCategory: "tecnology",
     secondaryCategory: "Auto",
@@ -9,7 +9,7 @@ const motores = [
     amount: 1,
   },
   {
-    id: 1,
+    id: 10,
     name: "Autopartes",
     mainCategory: "tecnology",
     secondaryCategory: "Auto",
@@ -18,7 +18,7 @@ const motores = [
     amount: 1,
   },
   {
-    id: 1,
+    id: 11,
     name: "Autopartes",
     mainCategory: "tecnology",
     secondaryCategory: "Auto",
@@ -27,7 +27,7 @@ const motores = [
     amount: 1,
   },
   {
-    id: 1,
+    id: 12,
     name: "Autopartes",
     mainCategory: "tecnology",
     secondaryCategory: "Auto",

@@ -1,6 +1,6 @@
 const repuestos=[
     {
-      id: 1,
+      id: 13,
       name: "Autopartes",
       mainCategory: "tecnology",
       secondaryCategory: "Auto",
@@ -9,7 +9,7 @@ const repuestos=[
       amount: 1,
     },
     {
-      id: 2,
+      id: 14,
       name: "Autopartes",
       mainCategory: "tecnology",
       secondaryCategory: "React",
@@ -18,7 +18,7 @@ const repuestos=[
       amount: 1,
     },
     {
-      id: 3,
+      id: 15,
       name: "Autopartes",
       mainCategory: "tecnology",
       secondaryCategory: "React",
@@ -27,7 +27,7 @@ const repuestos=[
       amount: 1,
     },
     {
-      id: 4,
+      id: 16,
       name: "Autopartes",
       mainCategory: "tecnology",
       secondaryCategory: "React",

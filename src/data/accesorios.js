@@ -9,7 +9,7 @@ const accesorios = [
       amount: 1,
     },
     {
-      id: 1,
+      id: 2,
       name: "Autopartes",
       mainCategory: "tecnology",
       secondaryCategory: "Auto",
@@ -18,7 +18,7 @@ const accesorios = [
       amount: 1,
     },
     {
-      id: 1,
+      id: 3,
       name: "Autopartes",
       mainCategory: "tecnology",
       secondaryCategory: "Auto",
@@ -27,7 +27,7 @@ const accesorios = [
       amount: 1,
     },
     {
-      id: 1,
+      id: 4,
       name: "Autopartes",
       mainCategory: "tecnology",
       secondaryCategory: "Auto",
