@@ -17,9 +17,9 @@ const Inicio = () => {
           <div className='box__message'>
             <div className='box__publicidad'>
               <h1>Bienvenidos</h1>
-              <h1>{t('inicio.hello-world')}</h1>
-              <button onClick={() => i18n.changeLanguage("es")}>ES</button>
-              <button onClick={() => i18n.changeLanguage("en")}>EN</button>
+             
+              <div onClick={() => i18n.changeLanguage("es")}>ES</div>
+              <div onClick={() => i18n.changeLanguage("en")}>EN</div>
               <p>
                 Conoce lo mejor en repuestos
                 <br />lubricantes, motores y mas...
@@ -40,7 +40,7 @@ const Inicio = () => {
       </div>
       <div className='box__container-principal'>
         <div className='box__container-card'>
-          <h3>{t('inicio.motors')}</h3>
+          <h3>{t('motors')}</h3>
           <div className='box__section-card'>
             <div className='box__card'>
               <picture>

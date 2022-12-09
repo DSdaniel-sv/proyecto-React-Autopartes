@@ -1,8 +1,6 @@
 {
-    "inicio":{
-        "hello-world" : "Hello World",
-        "motors" : "Motors"
-
-    },
-    "nombre" : "NAME"
+        "motors" : "Motors",
+    "nombre" : "NAME",
+    "Sign-in" : "Sign in",
+    "Log-in" : "Log in"
 }

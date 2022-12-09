@@ -1,7 +1,7 @@
 {
-    "inicio":{
-        "hello-world" : "Hola Mundo",
-        "motors" : "Motores"
-    },
-    "nombre" : "NOMBRE"
+  
+     "motors" : "Motores",
+    "nombre" : "NOMBRE",
+    "Sign-in" : "Registrarse",
+    "Log-in" : "Iniciar Sesión"
 }

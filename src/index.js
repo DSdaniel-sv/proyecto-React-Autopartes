@@ -7,8 +7,8 @@ import {I18nextProvider} from "react-i18next"
 import i18next from 'i18next'
 import global_es from "./translations/es/global.json"
 import global_en from "./translations/en/global.json"
-import Inicio from './Page/Inicio';
-import Header from './Components/Header';
+
+
 i18next.init({
   interpolation: {escapeValue: false},
   lng: "es",
@@ -20,6 +20,8 @@ i18next.init({
    },
   },
 });
+
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>

@@ -6,9 +6,11 @@ import Ham from './Ham';
 import HamI from './HamI';
 // import HamI from '../Components/HamI.css'
 import imgLogo from '../assets/img/logo/logo.png'
+import { useTranslation} from "react-i18next"
 
 
 const Header = () => {
+    const [t, i18n] = useTranslation("global");
 
     const [clicked, setClicked] = useState(false);
 
@@ -30,8 +32,8 @@ const Header = () => {
                         <Link to='/'><img src={imgLogo} alt="logo" /></Link>
                     </div>
                     <div className='box__icons-nav1'>
-                        <Link className='link-ico'><i className="fa-solid fa-circle-user"></i>Sign in</Link>
-                        <Link className='link-ico'><i className="fa-solid fa-right-to-bracket"></i>Log in</Link>
+                        <Link className='link-ico'><i className="fa-solid fa-circle-user"></i>{t('Sign-in')}</Link>
+                        <Link className='link-ico'><i className="fa-solid fa-right-to-bracket"></i>{t('Log-in')}</Link>
                         <Link className='link-ico'><i class="fa-solid fa-cart-shopping"></i></Link>
                         <Link className='link-ico'><i class="fa-solid fa-heart"></i></Link>
                     </div>
