@@ -26,6 +26,8 @@
 .box__icons-nav1{
     display: flex;
     gap: 30px;
+    justify-content: center;
+    align-items: center;
 }
 .link-ico{
     color: #fff;
@@ -34,6 +36,14 @@
     justify-content: center;
     align-items: center;
     gap: 5px;
+}
+.cart {
+    display: inline;
+    margin-top: -10px;
+}
+.cart i{
+    font-size: 20px;
+    color: #fff;
 }
 /* navinferior nav2*/
 .nav__inferior{
@@ -109,6 +119,25 @@
     color: #f0f0f0;
     border-bottom: 4px solid yellow;
 }
+
+
+
+.cart {
+    cursor: pointer;
+  }
+  .cart span:nth-child(1) {
+    font-size: 2rem;
+    color: white;
+  }
+  .cart span:nth-child(2) {
+    padding: 0 3px;
+    background-color: red;
+    color: white;
+    font-weight: bolx;
+    border-radius: 5px;
+    position: relative;
+    top: -15px;
+  }
 
 /* ham */
 @media(min-width: 768px){
