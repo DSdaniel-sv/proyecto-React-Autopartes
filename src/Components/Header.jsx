@@ -65,7 +65,7 @@ const Header = ({ setShow, size }) => {
                         <li>
                             <NavLink
                                 className="nav-link link-3"
-                                to="/contacto"
+                                to="/ofertas"
                                 activeclassname="active"
                             >
                                 <span>Ofertas</span>
@@ -74,7 +74,7 @@ const Header = ({ setShow, size }) => {
                         <li>
                             <NavLink
                                 className="nav-link link-4"
-                                to="/ofertas"
+                                to="/contacto"
                                 activeclassname="active"
                             >
                                 <span>Contacto</span>
