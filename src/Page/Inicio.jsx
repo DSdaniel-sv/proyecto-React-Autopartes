@@ -16,16 +16,13 @@ const Inicio = () => {
         <div className='box__container-ini'>
           <div className='box__message'>
             <div className='box__publicidad'>
-              <h1>Bienvenidos</h1>
-             
-              <div onClick={() => i18n.changeLanguage("es")}>ES</div>
-              <div onClick={() => i18n.changeLanguage("en")}>EN</div>
+              <h1>{t('Bienvenidos')}</h1>
               <p>
-                Conoce lo mejor en repuestos
-                <br />lubricantes, motores y mas...
+                {t('Conoce lo mejor en repuestos')}
+                <br />{t('lubricantes, motores y mas')}...
               </p>
               <div className='box__ver-Mas'>
-                <a href='#ver-mas'>VER MAS</a>
+                <a href='#ver-mas'>{t('VER MAS')}</a>
               </div>
             </div>
 
@@ -47,158 +44,158 @@ const Inicio = () => {
                 <img src={imgEjem} alt="" />
               </picture>
               <h4>{t('nombre')}</h4>
-              <p>PRECIO: </p>
-              <button>Ver mas</button>
+              <p>{t('PRECIO')}</p>
+              <button>{t('Ver mas')}</button>
             </div>
 
             <div className='box__card'>
               <picture>
                 <img src={imgEjem} alt="" />
               </picture>
-              <h4>NOMBRE: </h4>
-              <p>PRECIO: </p>
-              <button>Ver mas</button>
+              <h4>{t('nombre')}</h4>
+              <p>{t('PRECIO')}</p>
+              <button>{t('Ver mas')}</button>
             </div>
 
             <div className='box__card'>
               <picture>
                 <img src={imgEjem} alt="" />
               </picture>
-              <h4>NOMBRE: </h4>
-              <p>PRECIO: </p>
-              <button>Ver mas</button>
+              <h4>{t('nombre')}</h4>
+              <p>{t('PRECIO')}</p>
+              <button>{t('Ver mas')}</button>
             </div>
 
             <div className='box__card'>
               <picture>
                 <img src={imgEjem} alt="" />
               </picture>
-              <h4>NOMBRE: </h4>
-              <p>PRECIO: </p>
-              <button>Ver mas</button>
-            </div>
-          </div>
-        </div>
-
-        <div className='box__container-card'>
-          <h3>Repuestos</h3>
-          <div className='box__section-card'>
-            <div className='box__card'>
-              <picture>
-                <img src={imgEjem} alt="" />
-              </picture>
-              <h4>NOMBRE: </h4>
-              <p>PRECIO: </p>
-              <button>Ver mas</button>
-            </div>
-
-            <div className='box__card'>
-              <picture>
-                <img src={imgEjem} alt="" />
-              </picture>
-              <h4>NOMBRE: </h4>
-              <p>PRECIO: </p>
-              <button>Ver mas</button>
-            </div>
-
-            <div className='box__card'>
-              <picture>
-                <img src={imgEjem} alt="" />
-              </picture>
-              <h4>NOMBRE: </h4>
-              <p>PRECIO: </p>
-              <button>Ver mas</button>
-            </div>
-
-            <div className='box__card'>
-              <picture>
-                <img src={imgEjem} alt="" />
-              </picture>
-              <h4>NOMBRE: </h4>
-              <p>PRECIO: </p>
-              <button>Ver mas</button>
+              <h4>{t('nombre')}</h4>
+              <p>{t('PRECIO')}</p>
+              <button>{t('Ver mas')}</button>
             </div>
           </div>
         </div>
 
         <div className='box__container-card'>
-          <h3>Accesorios</h3>
+          <h3>{t('Repuestos')}</h3>
           <div className='box__section-card'>
             <div className='box__card'>
               <picture>
                 <img src={imgEjem} alt="" />
               </picture>
-              <h4>NOMBRE: </h4>
-              <p>PRECIO: </p>
-              <button>Ver mas</button>
+              <h4>{t('nombre')}</h4>
+              <p>{t('PRECIO')}</p>
+              <button>{t('Ver mas')}</button>
             </div>
 
             <div className='box__card'>
               <picture>
                 <img src={imgEjem} alt="" />
               </picture>
-              <h4>NOMBRE: </h4>
-              <p>PRECIO: </p>
-              <button>Ver mas</button>
+              <h4>{t('nombre')}</h4>
+              <p>{t('PRECIO')}</p>
+              <button>{t('Ver mas')}</button>
             </div>
 
             <div className='box__card'>
               <picture>
                 <img src={imgEjem} alt="" />
               </picture>
-              <h4>NOMBRE: </h4>
-              <p>PRECIO: </p>
-              <button>Ver mas</button>
+              <h4>{t('nombre')}</h4>
+              <p>{t('PRECIO')}</p>
+              <button>{t('Ver mas')}</button>
             </div>
 
             <div className='box__card'>
               <picture>
                 <img src={imgEjem} alt="" />
               </picture>
-              <h4>NOMBRE: </h4>
-              <p>PRECIO: </p>
-              <button>Ver mas</button>
+              <h4>{t('nombre')}</h4>
+              <p>{t('PRECIO')}</p>
+              <button>{t('Ver mas')}</button>
             </div>
           </div>
         </div>
 
         <div className='box__container-card'>
-          <h3>Lubricantes</h3>
+          <h3>{t('Accesorios')}</h3>
           <div className='box__section-card'>
             <div className='box__card'>
               <picture>
                 <img src={imgEjem} alt="" />
               </picture>
-              <h4>NOMBRE: </h4>
-              <p>PRECIO: </p>
-              <button>Ver mas</button>
+              <h4>{t('nombre')}</h4>
+              <p>{t('PRECIO')}</p>
+              <button>{t('Ver mas')}</button>
             </div>
 
             <div className='box__card'>
               <picture>
                 <img src={imgEjem} alt="" />
               </picture>
-              <h4>NOMBRE: </h4>
-              <p>PRECIO: </p>
-              <button>Ver mas</button>
+              <h4>{t('nombre')}</h4>
+              <p>{t('PRECIO')}</p>
+              <button>{t('Ver mas')}</button>
             </div>
 
             <div className='box__card'>
               <picture>
                 <img src={imgEjem} alt="" />
               </picture>
-              <h4>NOMBRE: </h4>
-              <p>PRECIO: </p>
-              <button>Ver mas</button>
+              <h4>{t('nombre')}</h4>
+              <p>{t('PRECIO')}</p>
+              <button>{t('Ver mas')}</button>
             </div>
 
             <div className='box__card'>
               <picture>
                 <img src={imgEjem} alt="" />
               </picture>
-              <h4>NOMBRE: </h4>
-              <p>PRECIO: </p>
-              <button>Ver mas</button>
+              <h4>{t('nombre')}</h4>
+              <p>{t('PRECIO')}</p>
+              <button>{t('Ver mas')}</button>
+            </div>
+          </div>
+        </div>
+
+        <div className='box__container-card'>
+          <h3>{t('Lubricantes')}</h3>
+          <div className='box__section-card'>
+            <div className='box__card'>
+              <picture>
+                <img src={imgEjem} alt="" />
+              </picture>
+              <h4>{t('nombre')}</h4>
+              <p>{t('PRECIO')}</p>
+              <button>{t('Ver mas')}</button>
+            </div>
+
+            <div className='box__card'>
+              <picture>
+                <img src={imgEjem} alt="" />
+              </picture>
+              <h4>{t('nombre')}</h4>
+              <p>{t('PRECIO')}</p>
+              <button>{t('Ver mas')}</button>
+            </div>
+
+            <div className='box__card'>
+              <picture>
+                <img src={imgEjem} alt="" />
+              </picture>
+              <h4>{t('nombre')}</h4>
+              <p>{t('PRECIO')}</p>
+              <button>{t('Ver mas')}</button>
+            </div>
+
+            <div className='box__card'>
+              <picture>
+                <img src={imgEjem} alt="" />
+              </picture>
+              <h4>{t('nombre')}</h4>
+              <p>{t('PRECIO')}</p>
+              <button>{t('Ver mas')}</button>
             </div>
           </div>
         </div>

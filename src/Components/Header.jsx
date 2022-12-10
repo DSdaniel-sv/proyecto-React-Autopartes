@@ -32,6 +32,8 @@ const Header = () => {
                         <Link to='/'><img src={imgLogo} alt="logo" /></Link>
                     </div>
                     <div className='box__icons-nav1'>
+                    <div onClick={() => i18n.changeLanguage("es")}>ES</div>
+              <div onClick={() => i18n.changeLanguage("en")}>EN</div>
                         <Link className='link-ico'><i className="fa-solid fa-circle-user"></i>{t('Sign-in')}</Link>
                         <Link className='link-ico'><i className="fa-solid fa-right-to-bracket"></i>{t('Log-in')}</Link>
                         <Link className='link-ico'><i class="fa-solid fa-cart-shopping"></i></Link>
@@ -43,16 +45,16 @@ const Header = () => {
             <div className='nav__inferior'>
                 <nav className='nav__2'>
                     <div className={`links ${clicked ? 'active' : ''}`} id='menu-links'>
-                        <li><NavLink className='nav-link link-1' to='/' activeclassname='active'><span>Inicio</span> </NavLink></li>
-                        <li><NavLink className='nav-link link-3' to='/contacto' activeclassname='active'><span>Ofertas</span></NavLink></li>
-                        <li><NavLink className='nav-link link-4' to='/ofertas' activeclassname='active'><span>Contacto</span></NavLink></li>
+                        <li><NavLink className='nav-link link-1' to='/' activeclassname='active'><span>{t('Start')}</span> </NavLink></li>
+                        <li><NavLink className='nav-link link-3' to='/contacto' activeclassname='active'><span>{t('Offers')}</span></NavLink></li>
+                        <li><NavLink className='nav-link link-4' to='/ofertas' activeclassname='active'><span>{t('Contacts')}</span></NavLink></li>
                         <form action="" className='frm__search1'>
-                            <input type="search" placeholder='¿Que desea buscar?' className='search1'/>
+                            <input type="search" placeholder={t('¿Que desea buscar?')} className='search1'/>
                         </form>
                     </div>
 
                     <form action="" className='frm__search2'>
-                        <input type="search2" placeholder='¿Que desea buscar?' className='search2'/>
+                        <input type="search2" placeholder={t('¿Que desea buscar?')} className='search2'/>
                     </form>
 
                     <div className='ham-burger'>
@@ -60,8 +62,8 @@ const Header = () => {
                     </div>
 
                     <div className={`linksI ${clickedI ? 'active' : ''}`} id='menu-linksI'>
-                        <Link className='link-ico'><i className="fa-solid fa-circle-user"></i>Sign in</Link>
-                        <Link className='link-ico'><i className="fa-solid fa-right-to-bracket"></i>Log in</Link>
+                        <Link className='link-ico'><i className="fa-solid fa-circle-user"></i>{t('Sign-in')}</Link>
+                        <Link className='link-ico'><i className="fa-solid fa-right-to-bracket"></i>{t('Log-in')}</Link>
                         <Link className='link-ico'><i class="fa-solid fa-cart-shopping"></i></Link>
                         <Link className='link-ico'><i class="fa-solid fa-heart"></i></Link>
                     </div>
