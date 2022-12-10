@@ -1,6 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import '../Page/Contacto.css'
+import imgLogo from "../assets/img/logo/logo.png";
+import imgContact from '../assets/img/contacto/image-1.svg'
 
 const Contacto = () => {
   return (
@@ -12,8 +14,8 @@ const Contacto = () => {
                         {/* <!-- logo --> */}
                         <div className="logotipe d-flex justify-content-center">
                             <Link href="#" className="d-flex align-items-center">
-                                <img src="./src/assets/img-multimedia/logo/logo.png" className="img-fluid" alt='logo.png'/>
-                                <h3 className="ubuntu">AUTOPARTES</h3>
+                                <img src={imgLogo} className="img-fluid" alt='logo.png'/>
+                                <h3 className="ubuntu">AUTOSHOP</h3>
                             </Link>
                         </div>
                         <h4 class="text-center text-uppercase anton">Contacto</h4>
@@ -32,7 +34,7 @@ const Contacto = () => {
                     {/* <!-- form img --> */}
                     <div className="col-lg-6 col-md-12 col-sm-12">
                         <figure className="w-100 img-form" id="box__img-message">
-                            <img src="./src/assets/img-multimedia/contacto/image-1.svg"/>
+                            <img src={imgContact}/>
                         </figure>
                     </div>
                 </div>

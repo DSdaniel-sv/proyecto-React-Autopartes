@@ -1,5 +1,7 @@
 .pie-pagina{
     width: 100%;
+    border-top: 2px solid #f0f0f0;
+    border-radius: 20px;
     background-color: rgba(0, 0, 0, 0.678);
     background-image: url(../assets/img/images/auto-deportivo2.webp);
     background-color: rgba(31, 112, 112, 0.452);

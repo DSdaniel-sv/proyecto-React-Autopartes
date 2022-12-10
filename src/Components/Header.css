@@ -131,7 +131,7 @@
   }
   .cart span:nth-child(2) {
     padding: 0 3px;
-    background-color: red;
+    background-color: rgb(87, 87, 87);
     color: white;
     font-weight: bolx;
     border-radius: 5px;
