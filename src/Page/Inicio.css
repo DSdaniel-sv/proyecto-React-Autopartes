@@ -72,8 +72,8 @@
     font-size: 20px;
 }
 #ver-mas{
-    width: 200px;
-    height: 130px;
+    width: 100px;
+    height: 50px;
 }
 
 /* box video */
@@ -102,7 +102,8 @@
 .box__container-card{
     border: 3px solid #a5a1a1;
     border-radius: 25px;
-    padding: 10px;
+    padding: 40px 10px;
+    padding-bottom: 3rem;
     margin-bottom: 2rem;
     background-image: url(../assets/img/images/auto-deportivo2.webp);
     background-color: rgba(31, 112, 112, 0.452);
@@ -127,9 +128,60 @@
     border: 3px solid #a5a1a1;
     border-radius: 25px;
     width: 300px;
-    height: 270px;
-    padding: 15px;
+    height: 450px;
+    padding: 15px 0;
 }
+.box__card img{
+    width: 200px;
+    border: solid;
+    border-radius: 20px;
+}
+
+
+/* card-carrito */
+.section-galery {
+    width: 80%;
+    margin: auto;
+    margin-top: 5%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+  }
+  .cards {
+    width: 250px;
+    padding: 20px;
+  }
+  .cards:hover {
+    box-shadow: 0 10px 10px 10px rbga(0, 0, 0, 0.1);
+    cursor: pointer;
+  }
+  .image_box img {
+    width: 150px;
+    height: 200px;
+  }
+  
+  .image_box img {
+    width: 150px;
+    height: 200px;
+  }
+  .details p:nth-child(1) {
+    font-weight: bold;
+  }
+  .details p:nth-child(2) {
+    color: grey;
+    font-size: 0.8rem;
+  }
+  .details p:nth-child(3) {
+    font-weight: bolx;
+    color: grey;
+  }
+  .details button {
+    padding: 5px 10px;
+    border: none;
+    font-weight: bold;
+    background-color: skyblue;
+    outline: none;
+  }
 .box__card h4, .box__card p{
     color: #f2eee3;
     font-weight: 700;
