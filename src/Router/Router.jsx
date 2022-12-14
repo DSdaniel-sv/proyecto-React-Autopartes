@@ -32,15 +32,13 @@ const Router = () => {
 
 
     <Routes>
-
-        <Route path='/contacto' element={<Contacto/>}/>
-        <Route path='ofertas' element={<Ofertas />} />
     {show ? ( 
         <Route path='/' element={<Inicio handleClick={handleClick} />} /> 
         ) : ( 
         <Route path='/cart' element={<Cart cart={cart} setCart={setCart} handleChange={handleChange} />} /> 
       )}
-
+        <Route path='/ofertas' element={<Ofertas/>} />
+        <Route path='/contacto' element={<Contacto/>}/>
     </Routes>
     <Footer/>
     </BrowserRouter>

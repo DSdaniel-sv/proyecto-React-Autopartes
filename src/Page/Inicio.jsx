@@ -40,6 +40,9 @@ const Inicio = ({ handleClick }) => {
         </div>
       </div>
 
+      <div id="ver-mas">
+      </div>
+
       <div className="content-galery">
         <section className="section-galery"></section>
       </div>
