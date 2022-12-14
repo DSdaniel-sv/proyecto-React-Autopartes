@@ -1,5 +1,9 @@
 .form-width{
     margin-top: 10rem;
+    background-image: url(../assets/img/images/background4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 /** Form **/
 #form-width{
