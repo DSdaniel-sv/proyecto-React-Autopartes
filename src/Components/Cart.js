@@ -27,17 +27,12 @@ const Cart = ({cart, setCart, handleChange}) => {
       {cart.length === 0 ? <h3>no hay productos agregadproductos agproductos ag
         productos ag
         productos ag
-        productosproductos ag
+        productos agproductos agproductos agproductos agproductos agprodproductos agproductos agproductos agproductos agproductos agproductos agproductos ag
         productos ag
-         agproductos agproductos agproductos agproductos agprodproductos agproductos agproductos agproductos agproductos agproductos agproductos ag
-        productroductos agregadprodu
-        os ag
         productos aguctos
         productos ag
         productos ag
-        productos ag
-        productos ag
-         ags...</h3>  : null}
+        productos ag ags...</h3>  : null}
   
       {cart.map((item) => (
         
