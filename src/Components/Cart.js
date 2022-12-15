@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react';
+import imgCarrito from '../assets/img/images/carrito-de-compras.png'
 import "../Components/Cart.css";
 
 const Cart = ({cart, setCart, handleChange}) => {
@@ -22,8 +23,21 @@ const Cart = ({cart, setCart, handleChange}) => {
 
 
   return (
-    <article>
+    <article className='box__cart'>
+      <h1 className='carrito_h1'>Carrito de compras</h1>
+      {cart.length === 0 ? 
+      <div className='cont__cart'>
+        <div className='box__cart-vacio'>
+          <picture>
+            <img src={imgCarrito} alt="" />
+          </picture>
+          <h2 className='carrito_h2'>CARRITO VACIO</h2>
+        </div>
+      </div>  
+      : null}
+  
       {cart.map((item) => (
+        
         <div className="cart_box" key={item.id}>
           <div className="cart_img">
             <img src={item.image} alt="" />
@@ -43,8 +57,9 @@ const Cart = ({cart, setCart, handleChange}) => {
         </div>
       ))}
       <div className="total">
-        <span>Monto tatal</span>
-        <span>S/  {price}</span>
+        <span className='price price-1'>Monto total</span>
+        <span className='price price-2'>S/  {price}</span>
+        
       </div>
     </article>
   );

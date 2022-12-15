@@ -112,15 +112,20 @@ const Header = ({ setShow, size }) => {
                         className={`linksI ${clickedI ? "active" : ""}`}
                         id="menu-linksI"
                     >
-                        <Link className="link-ico">
-                            <i className="fa-solid fa-circle-user"></i>{t('Sign-in')}
+                       <Link className="link-ico">
+                            <i className="fa-solid fa-circle-user"></i>Sign in
                         </Link>
                         <Link className="link-ico">
                             <i className="fa-solid fa-right-to-bracket"></i>{t('Log-in')}
                         </Link>
-                        <Link className="link-ico">
-                            <i class="fa-solid fa-cart-shopping"></i>
-                        </Link>
+
+                        <div className="cart" onClick={() => setShow(false)}>
+                            <span>
+                                <Link to="/cart"> <i className="fas fa-cart-plus"></i></Link>
+                            </span>
+                            <span>{size}</span>
+                        </div>
+
                         <Link className="link-ico">
                             <i class="fa-solid fa-heart"></i>
                         </Link>

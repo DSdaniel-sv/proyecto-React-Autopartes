@@ -3,7 +3,10 @@
     margin-top: 8.3rem;
     z-index: 0;
     height: auto;
-    
+    background-image: url(../assets/img/images/background3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 .ofertas-title{
