@@ -2,8 +2,11 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import '../Components/Footer.css'
 import imgLogo from '../assets/img/logo/logo.png'
+import { useTranslation} from "react-i18next"
+
 
 const Footer = () => {
+    const [t, i18n] = useTranslation("global");
     return (
         <div className='pie-pagina'>
             <div className='grupo-1'>
@@ -15,14 +18,14 @@ const Footer = () => {
                     </figure>
                 </div>
                 <div className="box">
-                    <h2>SOBRE NOSOTROS</h2>
+                    <h2>{t('footer.SOBRE NOSOTROS')}</h2>
                     <p><i className="fa-solid fa-phone"></i>     +51 940 890 890</p>
                     <br />
                     <br />
                     <p><i className="fa-solid fa-house"></i>     Av. Buenos Aires N°394</p>
                 </div>
                 <div class="box">
-                    <h2>SIGUENOS</h2>
+                    <h2>{t('footer.Follow-us')}</h2>
                     <div className="red-social">
                         <Link to='' className="fa fa-facebook"></Link>
                         <Link to='' className="fa fa-instagram"></Link>
@@ -32,7 +35,7 @@ const Footer = () => {
                 </div>
             </div>
             <div className="grupo-2">
-                <small>&copy; 2022 <b>AUTOSHOP</b> - Todos los Derechos Reservados.</small>
+                <small>&copy; 2022 <b>AUTOSHOP</b> - {t('footer.Todos-los-Derechos-Reservados')}</small>
             </div>
         </div>
     )

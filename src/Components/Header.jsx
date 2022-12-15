@@ -34,11 +34,13 @@ const Header = ({ setShow, size }) => {
                         </Link>
                     </div>
                     <div className="box__icons-nav1">
+                    <div onClick={() => i18n.changeLanguage("es")}>ES</div>
+              <div onClick={() => i18n.changeLanguage("en")}>EN</div>
                         <Link className="link-ico">
-                            <i className="fa-solid fa-circle-user"></i>Sign in
+                            <i className="fa-solid fa-circle-user"></i>{t('Sign-in')}
                         </Link>
                         <Link className="link-ico">
-                            <i className="fa-solid fa-right-to-bracket"></i>Log in
+                            <i className="fa-solid fa-right-to-bracket"></i>{t('Log-in')}
                         </Link>
 
                         <div className="cart" onClick={() => setShow(false)}>
@@ -64,7 +66,7 @@ const Header = ({ setShow, size }) => {
                                 to="/"
                                 activeclassname="active"
                             >
-                                <span className='my_shop' onClick={() => setShow(true)}>Inicio</span>{" "}
+                                <span className='my_shop' onClick={() => setShow(true)}>{t('Start')}</span>{" "}
                             </NavLink>
                         </li>
                         <li>
@@ -73,7 +75,7 @@ const Header = ({ setShow, size }) => {
                                 to="/ofertas"
                                 activeclassname="active"
                             >
-                                <span>Ofertas</span>
+                                <span>{t('Offers')}</span>
                             </NavLink>
                         </li>
                         <li>
@@ -82,7 +84,7 @@ const Header = ({ setShow, size }) => {
                                 to="/contacto"
                                 activeclassname="active"
                             >
-                                <span>Contacto</span>
+                                <span>{t('Contacts')}</span>
                             </NavLink>
                         </li>
                         <form action="" className="frm__search1">
@@ -111,10 +113,10 @@ const Header = ({ setShow, size }) => {
                         id="menu-linksI"
                     >
                         <Link className="link-ico">
-                            <i className="fa-solid fa-circle-user"></i>Sign in
+                            <i className="fa-solid fa-circle-user"></i>{t('Sign-in')}
                         </Link>
                         <Link className="link-ico">
-                            <i className="fa-solid fa-right-to-bracket"></i>Log in
+                            <i className="fa-solid fa-right-to-bracket"></i>{t('Log-in')}
                         </Link>
                         <Link className="link-ico">
                             <i class="fa-solid fa-cart-shopping"></i>

@@ -22,17 +22,14 @@ const Inicio = ({ handleClick }) => {
         <div className="box__container-ini">
           <div className="box__message">
             <div className="box__publicidad">
-              <h1>Bienvenidos</h1>
-             
-              <div onClick={() => i18n.changeLanguage("es")}>ES</div>
-              <div onClick={() => i18n.changeLanguage("en")}>EN</div>
+              <h1>{t('Bienvenidos')}</h1>
               <p>
-                Conoce lo mejor en repuestos
+              {t('Conoce lo mejor en repuestos')}
                 <br />
-                lubricantes, motores y mas...
+                {t('lubricantes, motores y mas')}...
               </p>
               <div className="box__ver-Mas">
-                <a href="#ver-mas">VER MAS</a>
+                <a href="#ver-mas">{t('VER MAS')}</a>
               </div>
             </div>
 
@@ -59,7 +56,7 @@ const Inicio = ({ handleClick }) => {
 
       <div className="box__container-principal">
         <div className="box__container-card">
-          <h3>Motores</h3>
+          <h3>{t("motors")}</h3>
           <div className="box__section-card">
 
             {mot.map((item) => (
@@ -70,19 +67,18 @@ const Inicio = ({ handleClick }) => {
         </div>
 
         <div className="box__container-card">
-          <h3>Repuestos</h3>
+          <h3>{t("Repuestos")}</h3>
           <div className="box__section-card">
 
 
           {repus.map((item) => (
               <Card key={item.id} item={item} handleClick={handleClick} />
             ))}
- 
           </div>
         </div>
 
         <div className="box__container-card">
-          <h3>Accesorios</h3>
+          <h3>{t('Accesorios')}</h3>
           <div className="box__section-card">
           {acceso.map((item) => (
               <Card key={item.id} item={item} handleClick={handleClick} />
@@ -100,7 +96,7 @@ const Inicio = ({ handleClick }) => {
         </div>
 
         <div className="box__container-card">
-          <h3>Lubricantes</h3>
+          <h3>{t('Lubricantes')}</h3>
           <div className="box__section-card">
 
           {lubri.map((item) => (

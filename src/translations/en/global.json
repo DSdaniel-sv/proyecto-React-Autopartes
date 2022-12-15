@@ -1,6 +1,24 @@
 {
+    "Bienvenidos" : "Welcome",
+    "Conoce lo mejor en repuestos": "Know the best in spare parts",
+    "lubricantes, motores y mas" : "lubricants, engines and more",
+    "¿Que desea buscar?": "What do you want to search ?",
+    "VER MAS" : "SEE MORE",
+    "Ver mas" : "See more",
         "motors" : "Motors",
+        "Repuestos" : "Spare parts",
+        "Accesorios" : "Accessories",
+        "Lubricantes" : "Lubricants",
     "nombre" : "NAME",
+    "PRECIO" : "PRICE",
     "Sign-in" : "Sign in",
-    "Log-in" : "Log in"
+    "Log-in" : "Log in",
+    "Start" : "Start",
+    "Offers " : "Offers",
+    "Contacts" : "Contacts",
+    "footer" : {
+        "Follow-us" : "FOLLOW US" ,
+        "Todos-los-Derechos-Reservados" : "All rights reserved" ,
+        "SOBRE NOSOTROS" : "ABOUT US"
+    }
 }
