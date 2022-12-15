@@ -5,3 +5,11 @@
     box-sizing: border-box;
     font-family: 'Playfair Display', serif;
 }
+body{
+    width: 100%;
+    background-color: #424242de;
+    background-image: url(./assets/img/images/auto-deportivo2.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
