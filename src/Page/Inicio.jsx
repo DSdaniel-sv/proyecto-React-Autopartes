@@ -55,7 +55,6 @@ const Inicio = ({ handleClick }) => {
             {mot.map((item) => (
               <Card key={item.id} item={item} handleClick={handleClick} />
             ))}
-
           </div>
         </div>
 
