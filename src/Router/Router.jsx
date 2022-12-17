@@ -6,6 +6,8 @@ import Contacto from '../Page/Contacto'
 import Inicio from '../Page/Inicio'
 import Ofertas from '../Page/Ofertas'
 import Cart from '../Components/Cart'
+import Login from '../auth/Login'
+import Register from '../auth/Register'
 
 const Router = () => {
   const [show, setShow] = useState(true);
@@ -37,6 +39,8 @@ const Router = () => {
         ) : ( 
         <Route path='/cart' element={<Cart cart={cart} setCart={setCart} handleChange={handleChange} />} /> 
       )}
+        <Route path='/login' element={<Login/>} />
+        <Route path='/register' element={<Register/>} />
         <Route path='/ofertas' element={<Ofertas/>} />
         <Route path='/contacto' element={<Contacto/>}/>
     </Routes>
