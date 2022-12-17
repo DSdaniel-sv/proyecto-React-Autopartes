@@ -6,6 +6,9 @@ import Contacto from '../Page/Contacto'
 import Inicio from '../Page/Inicio'
 import Ofertas from '../Page/Ofertas'
 import Cart from '../Components/Cart'
+import Login from '../Login/Login'
+import SignIn from '../Login/SignIn'
+import Recupera from '../Login/Recupera'
 
 const Router = () => {
   const [show, setShow] = useState(true);
@@ -39,6 +42,9 @@ const Router = () => {
       )}
         <Route path='/ofertas' element={<Ofertas/>} />
         <Route path='/contacto' element={<Contacto/>}/>
+        <Route path='/login' element={<Login/>}/>
+        <Route path='/signin' element={<SignIn/>}/>
+        <Route path='/recupera' element={<Recupera/>}/>
     </Routes>
     <Footer/>
     </BrowserRouter>

@@ -29,10 +29,10 @@ const Header = ({ setShow, size }) => {
                         </Link>
                     </div>
                     <div className="box__icons-nav1">
-                        <Link className="link-ico">
+                        <Link className="link-ico" to="/signin">
                             <i className="fa-solid fa-circle-user"></i>Sign in
                         </Link>
-                        <Link className="link-ico">
+                        <Link className="link-ico" to="/login">
                             <i className="fa-solid fa-right-to-bracket"></i>Log in
                         </Link>
 
