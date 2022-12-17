@@ -1,0 +1,30 @@
+.container {
+    text-align: center;  
+       margin-top: 160px;
+}
+.container_producto {
+    width: 537px; 
+    min-height: 450px;
+     height: auto;
+     color: white
+}
+.parrafo_texto{
+    color: white
+}
+.parrafo_valor {
+    font-size: 4.5rem; font-weight: 700;
+    color: white
+}
+.button_11 {
+    border-radius:  10px;
+                font-weight: 700;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                margin: 60px auto 0;
+                background-color: aqua;
+}
+.card-img-top1 {
+    background-image: url(../../assets/img/images/auto-deportivo.jpg);
+    max-width: 450px
+}
+
