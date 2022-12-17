@@ -16,25 +16,25 @@ const Header = ({ setShow, size }) => {
 
   const [clickedI, setClickedI] = useState(false);
 
-  const handleClickI = () => {
-    setClickedI(!clickedI);
-  };
-  return (
-    <header className="header">
-      <div className="nav__superior">
-        <nav className="nav__1">
-          <div className="box__logo">
-            <Link to="/">
-              <img src={imgLogo} alt="logo" />
-            </Link>
-          </div>
-          <div className="box__icons-nav1">
-            <Link className="link-ico">
-              <i className="fa-solid fa-circle-user"></i>Sign in
-            </Link>
-            <Link className="link-ico">
-              <i className="fa-solid fa-right-to-bracket"></i>Log in
-            </Link>
+    const handleClickI = () => {
+        setClickedI(!clickedI);
+    };
+    return (
+        <header className="header">
+            <div className="nav__superior">
+                <nav className="nav__1">
+                    <div className="box__logo">
+                        <Link to="/">
+                            <img src={imgLogo} alt="logo" />
+                        </Link>
+                    </div>
+                    <div className="box__icons-nav1">
+                        <Link className="link-ico" to="/signin">
+                            <i className="fa-solid fa-circle-user"></i>Sign in
+                        </Link>
+                        <Link className="link-ico" to="/login">
+                            <i className="fa-solid fa-right-to-bracket"></i>Log in
+                        </Link>
 
             <div className="cart" onClick={() => setShow(false)}>
               <span>
