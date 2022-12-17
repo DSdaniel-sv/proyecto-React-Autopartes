@@ -8,129 +8,149 @@ import HamI from "./HamI";
 import imgLogo from "../assets/img/logo/logo.png";
 
 const Header = ({ setShow, size }) => {
-    const [clicked, setClicked] = useState(false);
+  const [clicked, setClicked] = useState(false);
 
-    const handleClick = () => {
-        setClicked(!clicked);
-    };
+  const handleClick = () => {
+    setClicked(!clicked);
+  };
 
-    const [clickedI, setClickedI] = useState(false);
+  const [clickedI, setClickedI] = useState(false);
 
-    const handleClickI = () => {
-        setClickedI(!clickedI);
-    };
-    return (
-        <header className="header">
-            <div className="nav__superior">
-                <nav className="nav__1">
-                    <div className="box__logo">
-                        <Link to="/">
-                            <img src={imgLogo} alt="logo" />
-                        </Link>
-                    </div>
-                    <div className="box__icons-nav1">
-                        <Link className="link-ico">
-                            <i className="fa-solid fa-circle-user"></i>Sign in
-                        </Link>
-                        <Link className="link-ico">
-                            <i className="fa-solid fa-right-to-bracket"></i>Log in
-                        </Link>
+  const handleClickI = () => {
+    setClickedI(!clickedI);
+  };
+  return (
+    <header className="header">
+      <div className="nav__superior">
+        <nav className="nav__1">
+          <div className="box__logo">
+            <Link to="/">
+              <img src={imgLogo} alt="logo" />
+            </Link>
+          </div>
+          <div className="box__icons-nav1">
+            <Link className="link-ico">
+              <i className="fa-solid fa-circle-user"></i>Sign in
+            </Link>
+            <Link className="link-ico">
+              <i className="fa-solid fa-right-to-bracket"></i>Log in
+            </Link>
 
-                        <div className="cart" onClick={() => setShow(false)}>
-                            <span>
-                                <Link to="/cart"> <i className="fas fa-cart-plus"></i></Link>
-                            </span>
-                            <span>{size}</span>
-                        </div>
-
-                        <Link className="link-ico">
-                            <i class="fa-solid fa-heart"></i>
-                        </Link>
-                    </div>
-                </nav>
+            <div className="cart" onClick={() => setShow(false)}>
+              <span>
+                <Link to="/cart">
+                  {" "}
+                  <i className="fas fa-cart-plus"></i>
+                </Link>
+              </span>
+              <span>{size}</span>
             </div>
 
-            <div className="nav__inferior">
-                <nav className="nav__2">
-                    <div className={`links ${clicked ? "active" : ""}`} id="menu-links">
-                        <li>
-                            <NavLink
-                                className="nav-link link-1"
-                                to="/"
-                                activeclassname="active"
-                            >
-                                <span className='my_shop' onClick={() => setShow(true)}>Inicio</span>{" "}
-                            </NavLink>
-                        </li>
-                        <li>
-                            <NavLink
-                                className="nav-link link-3"
-                                to="/ofertas"
-                                activeclassname="active"
-                            >
-                                <span>Ofertas</span>
-                            </NavLink>
-                        </li>
-                        <li>
-                            <NavLink
-                                className="nav-link link-4"
-                                to="/contacto"
-                                activeclassname="active"
-                            >
-                                <span>Contacto</span>
-                            </NavLink>
-                        </li>
-                        <form action="" className="frm__search1">
-                            <input
-                                type="search"
-                                placeholder="¿Que desea buscar?"
-                                className="search1"
-                            />
-                        </form>
-                    </div>
+            <Link className="link-ico">
+              <i class="fa-solid fa-heart"></i>
+            </Link>
+          </div>
+        </nav>
+      </div>
 
-                    <form action="" className="frm__search2">
-                        <input
-                            type="search2"
-                            placeholder="¿Que desea buscar?"
-                            className="search2"
-                        />
-                    </form>
+      <div className="nav__inferior">
+        <nav className="nav__2">
+          <div className={`links ${clicked ? "active" : ""}`} id="menu-links">
+            <li>
+              <NavLink
+                className="nav-link link-1"
+                to="/"
+                activeclassname="active"
+              >
+                <span className="my_shop" onClick={() => setShow(true)}>
+                  Inicio
+                </span>{" "}
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                className="nav-link link-3"
+                to="/ofertas"
+                activeclassname="active"
+              >
+                <span>Ofertas</span>
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                className="nav-link link-4"
+                to="/contacto"
+                activeclassname="active"
+              >
+                <span>Contacto</span>
+              </NavLink>
+            </li>
 
-                    <div className="ham-burger">
-                        <Ham clicked={clicked} handleClick={handleClick} />
-                    </div>
+            <form action="" className="frm__search1">
+              <input
+                type="search"
+                placeholder="¿Que desea buscar?"
+                className="search1"
+              />
+            </form>
+          </div>
 
-                    <div
-                        className={`linksI ${clickedI ? "active" : ""}`}
-                        id="menu-linksI"
-                    >
-                       <Link className="link-ico">
-                            <i className="fa-solid fa-circle-user"></i>Sign in
-                        </Link>
-                        <Link className="link-ico">
-                            <i className="fa-solid fa-right-to-bracket"></i>Log in
-                        </Link>
+          <form>
 
-                        <div className="cart" onClick={() => setShow(false)}>
-                            <span>
-                                <Link to="/cart"> <i className="fas fa-cart-plus"></i></Link>
-                            </span>
-                            <span>{size}</span>
-                        </div>
+          <li>
+              <NavLink
+                className="nav-link link-1"
+                to="/buscar"
+                activeclassname="active"
+              >
+                <span className="my_shop" onClick={() => setShow(true)}>
+                  ver mas
+                </span>{" "}
+              </NavLink>
+            </li>
+            {/* <Link to="/buscar">
+                <span>ver mas</span>
+            </Link> */}
+            
+          </form>
 
-                        <Link className="link-ico">
-                            <i class="fa-solid fa-heart"></i>
-                        </Link>
-                    </div>
+          <div className="ham-burger">
+            <Ham clicked={clicked} handleClick={handleClick} />
+          </div>
 
-                    <div className="ham-burgerI">
-                        <HamI clickedI={clickedI} handleClickI={handleClickI} />
-                    </div>
-                </nav>
+          <div
+            className={`linksI ${clickedI ? "active" : ""}`}
+            id="menu-linksI"
+          >
+            <Link className="link-ico">
+              <i className="fa-solid fa-circle-user"></i>Sign in
+            </Link>
+            <Link className="link-ico">
+              <i className="fa-solid fa-right-to-bracket"></i>Log in
+            </Link>
+
+            <div className="cart" onClick={() => setShow(false)}>
+              <span>
+                <Link to="/cart">
+                  {" "}
+                  <i className="fas fa-cart-plus"></i>
+                </Link>
+              </span>
+              <span>{size}</span>
             </div>
-        </header>
-    );
+
+            <Link className="link-ico">
+              <i class="fa-solid fa-heart"></i>
+            </Link>
+          </div>
+
+          <div className="ham-burgerI">
+            <HamI clickedI={clickedI} handleClickI={handleClickI} />
+          </div>
+        </nav>
+      </div>
+    </header>
+  );
 };
 
 export default Header;

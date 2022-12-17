@@ -6,6 +6,8 @@ import Contacto from '../Page/Contacto'
 import Inicio from '../Page/Inicio'
 import Ofertas from '../Page/Ofertas'
 import Cart from '../Components/Cart'
+import SearchProduct from '../Page/search/SearchProduct'
+
 
 const Router = () => {
   const [show, setShow] = useState(true);
@@ -33,12 +35,16 @@ const Router = () => {
 
     <Routes>
     {show ? ( 
-        <Route path='/' element={<Inicio handleClick={handleClick} />} /> 
-        ) : ( 
+        <Route path='/' element={<Inicio handleClick={handleClick}/>}  /> 
+        ):( 
         <Route path='/cart' element={<Cart cart={cart} setCart={setCart} handleChange={handleChange} />} /> 
       )}
+        <Route path='/buscar' element={<SearchProduct handleClick={handleClick}/>}  /> 
+       
         <Route path='/ofertas' element={<Ofertas/>} />
         <Route path='/contacto' element={<Contacto/>}/>
+        
+  
     </Routes>
     <Footer/>
     </BrowserRouter>
