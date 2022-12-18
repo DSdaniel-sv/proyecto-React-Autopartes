@@ -45,9 +45,11 @@ const SearchProduct = (handleClick) => {
           <div>
             <select name="size" onChange={onFilterChange}>
               <option value="">Filter by Size</option>
-              <option value="25">S/ 20</option>
+              <option value="25">S/ 25</option>
               <option value="80">S/ 80</option>
-              <option value="110">S/ 110</option>
+              <option value="140">S/ 140</option>
+              <option value="230">S/ 230</option>
+              <option value="1000">S/ 1000</option>
             </select>
           </div>
         </div>
